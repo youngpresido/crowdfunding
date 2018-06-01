@@ -1,0 +1,61 @@
+ <nav id="sidebar">
+                <div  className="sidebar-header">
+                    <Link className="navbar-brand" to="/">KEGOWO</Link>
+                </div>
+                <ul className="list-unstyled components">
+                    <li className="nav-item">
+                        <Link to="/" data-toggle="" aria-expanded="false">
+                       
+                        <i className="glyphicon glyphicon-home"></i>
+                            Home
+                        </Link>
+                     
+                    </li>
+                    <li>
+                    <Link to="/fund">
+                            <i className="glyphicon glyphicon-briefcase"></i>
+                            Crowd Programs
+                    </Link>
+                    </li>
+                    <li> 
+                        <Link to="/pay">
+                        
+						    <i className="glyphicon glyphicon-duplicate"></i>
+                               Funded
+                        </Link>
+                     
+                    </li>
+                    <li>
+                    <Link to="/crowd">
+                        
+						    <i className="glyphicon glyphicon-duplicate"></i>
+                                Crowd
+                    </Link>
+                        
+                    </li>
+                    <li>
+                    <Link to="">
+                                <i className="glyphicon glyphicon-link"></i>
+                                Portfolio
+                        </Link>
+                    </li>
+                </ul>
+                <ul className="list-unstyled CTAs">
+                
+                  {!check ?
+                    <div>
+                    <li><Link className="nav-link" to="">Create Pocket</Link></li>
+                    <li><Link className="nav-link" to="">Pay Pocket</Link></li>
+                    <li><Link className="nav-link" to="/login">Log In</Link></li>
+                    <li><Link className="nav-link" to="/signup">Sign Up</Link></li>
+                    </div>
+                    :
+                    <div>
+                    <h4> You are welcome {this.state.user}!!!</h4>
+                    <li><Link className="nav-link" to="">Create Pocket</Link></li>
+                    <li><Link className="nav-link" to="">Pay Pocket</Link></li>
+                    <li><Link className="nav-link" to="">Logout</Link></li>
+                    </div>
+                  }
+                 </ul>
+            </nav>

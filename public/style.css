@@ -1,0 +1,10 @@
+.first-row{
+    max-height: 90vh !important;
+    overflow: hidden;
+}
+.nav-link .active{
+    background-color: #ddd !important;
+}
+.nav-link{
+    color: black;
+}
